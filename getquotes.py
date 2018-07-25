@@ -35,6 +35,9 @@ reader = csv.reader(f)
 for row in reader:
 	links.append(row[0])
 
-for link in links[:5:]:
+for link in links[801:805:]:
 	print link
-	getquotes(link)
+	try:
+		getquotes(link)
+	except:
+		print "error loading --> "+link
