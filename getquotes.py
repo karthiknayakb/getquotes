@@ -37,7 +37,7 @@ for row in reader:
 
 for link in links[801:805:]:
 	print link
-	try:
+	
 		getquotes(link)
 	except:
 		print "error loading --> "+link
