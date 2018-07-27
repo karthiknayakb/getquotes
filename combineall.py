@@ -1,7 +1,7 @@
 import json
 import os
 
-path = "quotes\\"
+path = "quotes/"
 #file = "Tyranny.json"
 
 files = os.listdir(path)

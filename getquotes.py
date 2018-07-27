@@ -18,7 +18,7 @@ def getquotes(link):
 	x,y=2,4
 	title = str(quotes[0].getText().replace(" Quotes and Quotations",""))
 	while y<len(quotes):
-		quotedic.append({"quote":str(quotes[x:y][0].getText()),"author":str(quotes[x:y][1].getText()).strip().replace("-","").strip()})
+		quotedic.append({"quote":str(quotes[x:y][0].getText()),"name":str(quotes[x:y][1].getText()).strip().replace("-","").strip()})
 		x+=4
 		y+=4
 	outfile = open("quotes/"+title+".json","w")
@@ -37,7 +37,7 @@ for row in reader:
 
 for link in links[801:805:]:
 	print link
-	try:
+	
 		getquotes(link)
 	except:
 		print "error loading --> "+link
