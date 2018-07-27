@@ -9,7 +9,7 @@ Steps:
 
 All quotes are downloaded in quotes folder in json format.
 
-Use "getquoteparallel.py" instead of "getquotes.py" for parallel execution. It is faster but Resource intensive!
+Use "getquotesparallel.py" instead of "getquotes.py" for parallel execution. It is faster but Resource intensive!
 This was tested on ubuntu. Cannot guarantee on other environments.
 
 Dependencies:
