@@ -18,7 +18,7 @@ def getquotes(link):
 	x,y=2,4
 	title = str(quotes[0].getText().replace(" Quotes and Quotations",""))
 	while y<len(quotes):
-		quotedic.append({"quote":str(quotes[x:y][0].getText()),"author":str(quotes[x:y][1].getText()).strip().replace("-","").strip()})
+		quotedic.append({"quote":str(quotes[x:y][0].getText()),"name":str(quotes[x:y][1].getText()).strip().replace("-","").strip()})
 		x+=4
 		y+=4
 	outfile = open("quotes/"+title+".json","w")
@@ -35,6 +35,6 @@ reader = csv.reader(f)
 for row in reader:
 	links.append(row[0])
 
-for link in links[:5:]:
+for link in links[:10:]:
 	print link
 	getquotes(link)
