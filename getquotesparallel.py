@@ -16,8 +16,8 @@ for row in reader:
 	links.append(row[0])
 
 ## set the number for parallel execution. High number means faster and resource intensive on CPU and Memory
-#eg: runs 4 parallel execution at a time, 
-parts = 4
+#eg: runs 8 parallel execution at a time, 
+parts = 8
 #########################
 
 #dividing the list to equal parts for parallel execution
